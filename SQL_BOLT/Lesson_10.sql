@@ -3,7 +3,7 @@
 -- E1
 
 SELECT max(years_employed) FROM employees;
-
+ 
 -- E2 
 
 SELECT role, avg(years_employed) FROM employees group by role;
