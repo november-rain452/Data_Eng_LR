@@ -6,3 +6,7 @@ SELECT card_name,(max(issued_amount)-min(issued_amount)) as difference FROM mont
 
 SELECT drug, total_sales - cogs as profit FROM pharmacy_sales order by profit desc limit 3;
 
+-- E3
+
+SELECT ticker , count(ticker) FROM stock_prices
+where ((close-open)/open)*100 >10 or ((close - open)/open)*100 < -10 group by ticker order by count(ticker) desc;
