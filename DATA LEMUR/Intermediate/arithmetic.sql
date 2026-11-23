@@ -4,7 +4,7 @@ SELECT card_name,(max(issued_amount)-min(issued_amount)) as difference FROM mont
 
 -- E2
 
-SELECT drug, total_sales - cogs as profit FROM pharmacy_sales order by profit desc limit 3;
+SELECT drug, total_sales - cogs as profit FROM pharmacy_sales order by profit desc limit 3 ;
 
 -- E3
 
